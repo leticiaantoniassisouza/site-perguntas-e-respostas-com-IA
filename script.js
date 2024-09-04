@@ -6,59 +6,157 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Kung Fu Panda é um filme de animação que foi lançado em 2008 que conta a história de Po, um panda que trabalha na loja de macarrão de sua familia e sonha em transformar-se em um dragão guerreiro.",
+       
+        enunciado: "Quem foi o principal criador de Elden Ring? ",
         alternativas: [
             {
-                texto: "Já asisti o filme e gostei da animação e desenvolvimento da história!",
-                afirmacao: "A pessoa gostou do filme"
+                texto: "Hidetaka Miyazaki",
+                afirmacao: [
+                ],
+                proxima: 1,
             },
             {
-                texto: "Assisti o filme, mas não gostei de comoa história se desenvolvel",
-                afirmacao: "A pessoa não gostou do filme"
-            }
+                texto: "Hironobu Sakaguchi",
+                afirmacao: [
+                   
+                ],
+                proxima: 2,
+            },
         ]
     },
     {
-        enunciado: "No primeiro filme, Po enfrenta Tai Lung, o que você achou desssa luta?",
+        enunciado: "Quem é o personagem principal do jogo?",
         alternativas: [
             {
-                texto: "Achei muito boa a cena de luta, muito bem desenvolvida e engraçada!",
-                afirmacao: "A cena foi divertida"
+                texto: "O Cavaleiro",
+                afirmacao: [
+                  
+                ],
+                proxima: 3,
             },
             {
-                texto: "Não gostei da cena de luta, poderia ter tido mais ação e emoção!",
-                afirmacao: "A cena não foi boa"
-            }
+                texto: "O Sinluz (Tarnished)",
+                afirmacao: [
+                 
+                ],
+                proxima: 4,
+            },
         ]
     },
     {
-        enunciado: "Na saga, Po desenvolve uma grande amizade com os cinco furiosos",
+        enunciado: "Qual desses é um dos principais chefes em Elden Ring?",
         alternativas: [
             {
-                texto: "Gosto de como a amizade deles foi desenvolvida no decorrer dos filmes",
-                afirmacao: "ela gostou do desenvolvimento dos personagens"
+                texto: "Gwyn, Lord of Cinder",
+                afirmacao: [
+                   
+                ],
+                proxima: 3,
             },
             {
-                texto: "Não gostei de como desenvolveram a amizade dos personagens",
-                afirmacao: "ela não gostou do desenvolvimento dos personagens"
-            }
+                texto: "Malenia, Blade of Miquella",
+                afirmacao: [
+                  
+                ],
+                proxima: 4,
+            },
         ]
     },
     {
-        enunciado: "No último filme, os cinco furiosos não tiveram uma aparição",
+        enunciado: "Qual é a natureza de Radahn, um dos grandes chefes do jogo?",
         alternativas: [
             {
-                texto: "Infelizmente os cinco furiosos não apareceram,mas esse fato não teve importância para a história",
-                afirmacao: "não fez importância os cinco furiosos não aparecerem"
+                texto: "Um guerreiro gigante",
+                afirmacao: [
+                    
+                ],
+                proxima: 5,
             },
             {
-                texto: "Infelizmente os cinco furiosos não apareceram, não teve impacto na hostória geral do filme, mas senti falta da aparição dos personagens!",
-                afirmacao: "fez importância os cinco furiosos não aparecerem"
-            }
+                texto: "Um cavaleiro celestial",
+                afirmacao: [
+            
+                ],
+                proxima: 6,
+            },
         ]
     },
+    {
+        enunciado: "Qual renomado autor de fantasia colaborou com a FromSoftware para criar a lore de Elden Ring?",
+        alternativas: [
+            {
+                texto: "George R. R. Martin",
+                afirmacao: [
+                  
+                ],
+                proxima: 5,
+            },
+            {
+                texto: " J.K. Rowling",
+                afirmacao: [
+                   
+                ],
+                proxima: 6,
+            },
+        ]
+    },
+    {
+        enunciado: "Qual é a função das Sites of Grace no jogo?",
+        alternativas: [
+            {
+                texto: "Áreas seguras onde inimigos não podem atacar",
+                afirmacao: [
+                   
+                ],
+                proxima: 7,
+            },
+            {
+                texto: "Pontos de recuperação de HP e FP, e lugares para subir de nível",
+                afirmacao: [
+                  
+                ],
+                proxima: 7,
+            },
+        ]
+    },
+    {
+        enunciado: "Qual é o nome do mundo em que se passa Elden Ring?",
+        alternativas: [
+            {
+                texto: " Drangleic",
+                afirmacao: [
+                    
+                ],
+                proxima: 7,
+            },
+            {
+                texto: "The Lands Between",
+                afirmacao: [
+                   
+                ],
+                proxima: 7,
+            },
+        ]
+    },
+    {
+        enunciado: "Qual dos seguintes jogos da FromSoftware possui referências e semelhanças notáveis com Elden Ring?",
+        alternativas: [
+            {
+                texto: "Bloodborne",
+                afirmacao: [
+                    
+                ],
+            },
+            {
+                texto: " Dark Souls",
+                afirmacao: [
+                    "Temos um expert em Elden Ring por aqui!Parábens jovem gamer!"
+                    
+                ],
+            },
+        ]
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
